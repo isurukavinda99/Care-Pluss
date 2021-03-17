@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="app_name">Care Plus</string>
+
+    <!--common strings-->
+    <!--buttons-->
+    <string name="com_login">Login</string>
+    <string name="com_sing_up">Sing Up</string>
+    <string name="com_save">Save</string>
+    <string name="com_submit">Submit</string>
+    <string name="com_cancel">Cancel</string>
+    <string name="com_update">Update</string>
+    <string name="com_delete">Delete</string>
+    <string name="com_add">Add</string>
+
+    <string name="com_patient">Patient</string>
+    <string name="com_prescription">Prescription</string>
+    <string name="com_meal">Meal</string>
+    <string name="com_workout">Workout</string>
+
+    <!--text fealds-->
+    <string name = "com_full_name">Full Name</string>
+    <string name="com_dob">Date of Birth</string>
+    <string name="com_phone">Phone</string>
+    <string name="com_email">Email</string>
+    <string name="com_create_pw">Create Password</string>
+    <string name="com_confirm_pw">Confirm Password</string>
+    <string name="com_forgot_pw">Forgot Password?</string>
+
+    <!--pms strings-->
+    <!--mms strings-->
+    <!--wms strings-->
+    <!--prms strings-->
+</resources>
