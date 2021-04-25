@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pms_backg_one_1"
+    tools:context=".Pms_add_patient">
+
+    <TextView
+        android:layout_width="366dp"
+        android:layout_height="532dp"
+        android:background="@drawable/pms_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889" />
+
+    <EditText
+        android:id="@+id/txt_add_patient_id"
+        android:layout_width="301dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+
+        android:hint="@string/pms_add_patient_id"
+        android:textColorHint="@color/com_color_teal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <EditText
+        android:id="@+id/txt_add_patient_name"
+        android:layout_width="302dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/pms_add_patient_name"
+        android:textColorHint="@color/com_color_teal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273" />
+
+    <EditText
+        android:id="@+id/txt_add_patient_dob"
+        android:layout_width="303dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/pms_add_patient_dob"
+        android:textColorHint="@color/com_color_teal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <EditText
+        android:id="@+id/txt_add_patient_age"
+        android:layout_width="304dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/pms_add_patient_age"
+        android:textColorHint="@color/com_color_teal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <EditText
+        android:id="@+id/txt_add_patient_guardian"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/pms_add_patient_guardian"
+        android:textColorHint="@color/com_color_teal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <EditText
+        android:id="@+id/txt_add_patient_contact"
+        android:layout_width="298dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/pms_add_patient_contact"
+        android:textColorHint="@color/com_color_teal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548" />
+
+    <EditText
+        android:id="@+id/txt_add_patient_reason"
+        android:layout_width="292dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/pms_add_patient_reason"
+        android:textColorHint="@color/com_color_teal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619" />
+
+    <EditText
+        android:id="@+id/txt_add_patient_ad_date"
+        android:layout_width="291dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/pms_add_patient_admit"
+        android:textColorHint="@color/com_color_teal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <EditText
+        android:id="@+id/txt_add_patient_additional"
+        android:layout_width="293dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/pms_add_patient_additional"
+        android:textColorHint="@color/com_color_teal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <Button
+        android:id="@+id/btn_add_patiet_save"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/com_cancel"
+        android:textSize="24sp"
+        app:backgroundTint="@color/com_color_delete"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <Button
+        android:id="@+id/btn_add_patiet_cancel"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/com_save"
+        android:textSize="24sp"
+        app:backgroundTint="@color/com_color_save"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

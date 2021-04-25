@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CarePlus">
+        <activity android:name=".Pms_clinic_record_detailed"></activity>
+        <activity android:name=".Pms_patient_list_detailed" />
+        <activity android:name=".Pms_patient_list" />
+        <activity android:name=".Pms_add_clinical_record" />
+        <activity android:name=".Pms_add_patient" />
+        <activity android:name=".Pms_bmi_calculator" />
+        <activity android:name=".Pms_home" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
