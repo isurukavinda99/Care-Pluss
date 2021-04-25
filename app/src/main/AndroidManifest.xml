@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CarePlus">
+        <activity android:name=".mms.Mms_displayNutrientTable"></activity>
+        <activity android:name=".mms.Mms_updateEntry" />
+        <activity android:name=".mms.Mms_viewMealPlan2" />
+        <activity android:name=".mms.Mms_addNewMeal" />
+        <activity android:name=".mms.Mms_updateMealPlan" />
+        <activity android:name=".mms.Mms_measureNutrients" />
+        <activity android:name=".mms.Mms_viewMealPlan1" />
+        <activity android:name=".mms.Mms_addNewPlan" />
+        <activity android:name=".mms.Mms_dashboard" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
