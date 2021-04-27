@@ -3,6 +3,8 @@ package com.example.careplus;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.ContentValues;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +12,10 @@ import android.widget.Button;
 import com.example.careplus.wms.Wms_create_schedule;
 import com.example.careplus.wms.Wms_dashboard;
 import com.example.careplus.wms.Wms_view_reports;
+import android.os.ConditionVariable;
+
+import com.example.careplus.database.DatabaseHelper;
+import com.example.careplus.database.DatabaseTable;
 
 public class MainActivity extends AppCompatActivity {
     //Button btnWorkout;//Wms_dashboard a button object
@@ -18,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        DatabaseHelper mydb = new DatabaseHelper(this);
 
         //wms_link btnWorkout button with xml
         //btnWorkout = findViewById(R.id.btnWorkout);
