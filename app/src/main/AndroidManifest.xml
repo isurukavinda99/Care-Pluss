@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CarePlus">
+        <activity android:name=".wms.Wms_view_reports"></activity>
+        <activity android:name=".wms.Wms_view_plans" />
+        <activity android:name=".wms.Wms_create_schedule" />
+        <activity android:name=".wms.Wms_dashboard" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

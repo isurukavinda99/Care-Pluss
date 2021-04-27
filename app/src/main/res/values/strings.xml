@@ -19,7 +19,7 @@
     <string name="com_workout">Workout</string>
 
     <!--text fealds-->
-    <string name = "com_full_name">Full Name</string>
+    <string name="com_full_name">Full Name</string>
     <string name="com_dob">Date of Birth</string>
     <string name="com_phone">Phone</string>
     <string name="com_email">Email</string>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wms.Wms_view_reports"
+    android:background="@drawable/wms_view_report_back"
+    >
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="548dp"
+        android:text="Delete"
+        app:backgroundTint="#A45A52"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="548dp"
+        android:text="Update"
+        app:backgroundTint="#4F97A3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:layout_width="238dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="124dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName13"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="484dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Now Weight:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName12"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="420dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Then Weight:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName11"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="360dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="End Date:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName8"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="296dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Start Date:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="232dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Age:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Patient ID:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="348dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:text="Monthly Workout Report"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

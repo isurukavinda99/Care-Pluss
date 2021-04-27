@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wms.Wms_view_plans"
+    android:background="@drawable/wms_view_plan_back"
+    >
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="496dp"
+        android:text="Delete"
+        app:backgroundTint="#A45A52"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="420dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Instructor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="360dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Workout Date:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="232dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Age:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="296dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Workout Name:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="172dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Patient ID:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="496dp"
+        android:text="Update"
+        app:backgroundTint="#4F97A3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="366dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="48dp"
+        android:text="View Patient Workout Plan"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:layout_width="238dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="120dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
