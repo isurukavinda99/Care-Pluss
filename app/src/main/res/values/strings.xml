@@ -19,7 +19,7 @@
     <string name="com_workout">Workout</string>
 
     <!--text fealds-->
-    <string name = "com_full_name">Full Name</string>
+    <string name="com_full_name">Full Name</string>
     <string name="com_dob">Date of Birth</string>
     <string name="com_phone">Phone</string>
     <string name="com_email">Email</string>
@@ -31,4 +31,24 @@
     <!--mms strings-->
     <!--wms strings-->
     <!--prms strings-->
+    <string name="prms_dashboard_labal">Care Plus - Dashboard</string>
+    <string name="prms_add_pres_labal">Care Plus - New Prescription</string>
+    <string name="prms_search_patient">Search</string>
+    <string name="prms_radio_morning">Morning</string>
+    <string name="prms_radio_day">Day</string>
+    <string name="prms_radio_night">Night</string>
+
+    <string name="prms_lbl_patient_name">Name</string>
+    <string name="prms_lbl_patient_dob">DOB</string>
+    <string name="prms_lbl_patient_admit_date">Admit Date</string>
+    <string name="prms_lbl_patient_reason">Reason</string>
+    <string name="prms_drug_name_table">Drug Name</string>
+    <string name="prms_drug_dose_table">Dose</string>
+    <string name="prms_before_meal">Before Meal</string>
+    <string name="prms_add_addEntity">Add Entity</string>
+
+    <string name="prms_doc_add_name">Doctor Name</string>
+    <string name="prms_doc_add_moh_number">MOH Number</string>
+    <string name="prms_doc_description">Description</string>
+
 </resources>
