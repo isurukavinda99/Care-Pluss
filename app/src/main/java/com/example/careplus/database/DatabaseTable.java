@@ -313,4 +313,28 @@ public class DatabaseTable {
     }
 
 
+    /*User table create at 2021 05 04*/
+    public class User{
+
+        /*restrict creating objects*/
+        private User(){}
+
+        /*Table name*/
+        public static final String TABLE_NAME = "user";
+
+        /*Table properties*/
+        public static final String USER_ID = "user_id";
+        public static final String USER_NAME = "user_name";
+        public static final String USER_PASSWORD = "password";
+
+        /*Create String*/
+        public static final String CREATE_TABLE_STRING = "create table if not exists "+TABLE_NAME+"(" +
+                ""+USER_ID+" integer not null primary key autoincrement , " +
+                ""+USER_NAME + " varchar(60) not null , " +
+                ""+USER_PASSWORD + " varchar(64) not null )";
+
+
+    }
+
+
 }
