@@ -19,6 +19,7 @@ import com.example.careplus.R;
 import com.example.careplus.database.DatabaseHelper;
 import com.example.careplus.database.DatabaseTable;
 
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -36,7 +37,7 @@ public class Prms_add_prescription extends AppCompatActivity {
 
     EditText prms_txt_search_add_prec;
 
-    TextView prms_lbl_add_name , prms_lbl_add_dob , prms_lbl_add_admit_date , prms_lbl_add_reason , prms_lbl_add_id;
+    TextView prms_lbl_add_name , prms_lbl_add_dob , prms_lbl_add_admit_date , prms_lbl_add_reason , prms_lbl_add_id , prms_lbl_add_age;
 
     EditText prms_txt_add_drug_name, prms_txt_add_dose;
     CheckBox prms_chk_before_meal;
@@ -63,6 +64,7 @@ public class Prms_add_prescription extends AppCompatActivity {
         prms_lbl_add_admit_date = findViewById(R.id.prms_lbl_view_admit_date);
         prms_lbl_add_reason = findViewById(R.id.prms_lbl_view_reason);
         prms_lbl_add_id = findViewById(R.id.prms_lbl_view_id);
+        prms_lbl_add_age = findViewById(R.id.prms_lbl_add_age);
 
         prms_txt_add_drug_name = findViewById(R.id.prms_txt_add_drug_name);
         prms_txt_add_dose = findViewById(R.id.prms_txt_add_dose);
@@ -118,6 +120,15 @@ public class Prms_add_prescription extends AppCompatActivity {
                     prms_lbl_add_id.setText(patient.getString(patient.getColumnIndexOrThrow(DatabaseTable.Patient.PATIENT_ID)));
                     prms_lbl_add_name.setText(patient.getString(patient.getColumnIndexOrThrow(DatabaseTable.Patient.PATIENT_FIRST_NAME)));
                     prms_lbl_add_dob.setText(patient.getString(patient.getColumnIndexOrThrow(DatabaseTable.Patient.PATIENT_DOB)));
+
+                    /*calculate age*/
+                    DateFormat dateFormat = new SimpleDateFormat("YYYY");
+                    Date date = new Date();
+                    String year = dateFormat.format(date);
+                    //System.out.println(year);
+                    String age = new Prms_separate_methods().calculate_age(patient.getString(patient.getColumnIndexOrThrow(DatabaseTable.Patient.PATIENT_DOB)) , year);
+                    prms_lbl_add_age.setText(age);
+
                     prms_lbl_add_admit_date.setText(patient.getString(patient.getColumnIndexOrThrow(DatabaseTable.Patient.PATIENT_DATE_ADMITTED)));
                     prms_lbl_add_reason.setText(patient.getString(patient.getColumnIndexOrThrow(DatabaseTable.Patient.PATIENT_REASON)));
                 }

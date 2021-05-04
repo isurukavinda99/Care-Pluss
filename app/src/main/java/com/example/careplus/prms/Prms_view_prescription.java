@@ -20,6 +20,10 @@ import com.example.careplus.R;
 import com.example.careplus.database.DatabaseHelper;
 import com.example.careplus.database.DatabaseTable;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Prms_view_prescription extends AppCompatActivity {
 
     LinearLayout prms_view_prms_list;
@@ -28,7 +32,7 @@ public class Prms_view_prescription extends AppCompatActivity {
 
     RadioButton prms_morning_radio_view , prms_day_radio_view , prms_night_radio_view;
 
-    TextView prms_lbl_view_id , prms_lbl_view_name , prms_lbl_view_dob , prms_lbl_view_admit_date , prms_lbl_view_reason;
+    TextView prms_lbl_view_id , prms_lbl_view_name , prms_lbl_view_dob , prms_lbl_view_admit_date , prms_lbl_view_reason , prms_lbl_view_age;
 
     DatabaseHelper view_database;
 
@@ -51,6 +55,7 @@ public class Prms_view_prescription extends AppCompatActivity {
         prms_lbl_view_dob = findViewById(R.id.prms_lbl_view_dob);
         prms_lbl_view_admit_date = findViewById(R.id.prms_lbl_view_admit_date);
         prms_lbl_view_reason = findViewById(R.id.prms_lbl_view_reason);
+        prms_lbl_view_age = findViewById(R.id.prms_lbl_view_age);
 
 
 
@@ -88,6 +93,7 @@ public class Prms_view_prescription extends AppCompatActivity {
         prms_lbl_view_id.setText(null);
         prms_lbl_view_name.setText(null);
         prms_lbl_view_dob.setText(null);
+        prms_lbl_view_age.setText(null);
         prms_lbl_view_admit_date.setText(null);
         prms_lbl_view_reason.setText(null);
 
@@ -123,6 +129,15 @@ public class Prms_view_prescription extends AppCompatActivity {
                         prms_lbl_view_id.setText(patient.getString(patient.getColumnIndexOrThrow(DatabaseTable.Patient.PATIENT_ID)));
                         prms_lbl_view_name.setText(patient.getString(patient.getColumnIndexOrThrow(DatabaseTable.Patient.PATIENT_FIRST_NAME)));
                         prms_lbl_view_dob.setText(patient.getString(patient.getColumnIndexOrThrow(DatabaseTable.Patient.PATIENT_DOB)));
+
+                        /*calculate age*/
+                        DateFormat dateFormat = new SimpleDateFormat("YYYY");
+                        Date date = new Date();
+                        String year = dateFormat.format(date);
+                        //System.out.println(year);
+                        String age = new Prms_separate_methods().calculate_age(patient.getString(patient.getColumnIndexOrThrow(DatabaseTable.Patient.PATIENT_DOB)) , year);
+                        prms_lbl_view_age.setText(age);
+
                         prms_lbl_view_admit_date.setText(patient.getString(patient.getColumnIndexOrThrow(DatabaseTable.Patient.PATIENT_DATE_ADMITTED)));
                         prms_lbl_view_reason.setText(patient.getString(patient.getColumnIndexOrThrow(DatabaseTable.Patient.PATIENT_REASON)));
 

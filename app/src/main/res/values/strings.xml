@@ -50,6 +50,7 @@
     <string name="prms_doc_add_name">Doctor Name</string>
     <string name="prms_doc_add_moh_number">MOH Number</string>
     <string name="prms_doc_description">Description</string>
+    <string name = "prms_view_age">Age</string>
 
     <!--view-->
     <string name="prms_view_presc_lable">Care Plus - View Prescription</string>
