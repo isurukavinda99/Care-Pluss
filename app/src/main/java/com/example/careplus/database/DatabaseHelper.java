@@ -114,8 +114,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
          */
 
         SQLiteDatabase db = getWritableDatabase();
+        int effected_rows = 0;
         try{
-            int effected_rows = db.update(
+            effected_rows = db.update(
                     TABLE_NAME ,
                     values,
                     where,
@@ -127,10 +128,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
 
 
-        return 1;
+        return effected_rows;
     }
 
-    public void delete(String TABLE_NAME , String where , String whereArgs[]){
+    public int delete(String TABLE_NAME , String where , String whereArgs[]){
 
         /*
             *where -> "where username like 10" this should be "username like ?" , dont put 'where' and values inside hear
@@ -140,6 +141,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         SQLiteDatabase db = getWritableDatabase();
         int effected_rows = db.delete(TABLE_NAME , where , whereArgs);
+        return effected_rows;
 
     }
 

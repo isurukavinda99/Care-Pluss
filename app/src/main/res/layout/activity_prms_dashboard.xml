@@ -43,12 +43,13 @@
                     app:srcCompat="@drawable/prms_dashboard_new_prec" />
 
                 <ImageButton
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/prms_load_update_presc"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:background="@color/com_color_teal"
+                    android:onClick="load_update_prescription"
                     android:tint="@color/white"
                     app:srcCompat="@drawable/prms_dashboard_update_presc" />
             </LinearLayout>
@@ -58,22 +59,24 @@
                 android:layout_height="wrap_content">
 
                 <ImageButton
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/prms_load_reallocate_presc"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:background="@color/com_color_teal"
+                    android:onClick="load_reallocate_prescription"
                     android:src="@drawable/prms_dashboard_realocate"
                     android:tint="@color/white" />
 
                 <ImageButton
-                    android:id="@+id/imageButton4"
+                    android:id="@+id/prms_btn_dashboard_delete"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:background="@color/com_color_teal"
+                    android:onClick="load_delete_prescription"
                     android:src="@drawable/prms_dashboard_delete"
                     android:tint="@color/white" />
 
@@ -85,12 +88,13 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton5"
+                    android:id="@+id/prms_view_prescrp"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:background="@color/com_color_teal"
                     android:layout_weight="1"
+                    android:background="@color/com_color_teal"
+                    android:onClick="load_view_prescription"
                     android:src="@drawable/prms_dashboard_view"
                     android:tint="@color/white" />
             </LinearLayout>

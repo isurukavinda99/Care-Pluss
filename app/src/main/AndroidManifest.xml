@@ -9,8 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CarePlus">
-        <activity android:name=".prms.Prms_add_prescription" android:label="@string/prms_add_pres_labal"></activity>
-        <activity android:name=".prms.prms_dashboard" android:label="@string/prms_dashboard_labal" />
+        <activity android:name=".prms.Prms_reallocate_prescription" android:label="@string/prms_reallocate_presc_lable"></activity>
+        <activity android:name=".prms.Prms_update_current_prescreption" android:label="@string/prms_update_presc_lable" />
+        <activity
+            android:name=".prms.Prms_delete_prescription"
+            android:label="@string/prms_delete_presc_lable" />
+        <activity
+            android:name=".prms.Prms_view_prescription"
+            android:label="@string/prms_view_presc_lable" />
+        <activity
+            android:name=".prms.Prms_add_prescription"
+            android:label="@string/prms_add_pres_labal" />
+        <activity
+            android:name=".prms.prms_dashboard"
+            android:label="@string/prms_dashboard_labal" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

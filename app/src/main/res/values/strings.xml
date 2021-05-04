@@ -51,4 +51,13 @@
     <string name="prms_doc_add_moh_number">MOH Number</string>
     <string name="prms_doc_description">Description</string>
 
+    <!--view-->
+    <string name="prms_view_presc_lable">Care Plus - View Prescription</string>
+
+    <string name="prms_delete_presc_lable">Care Plus - Delete Prescription</string>
+
+    <string name="prms_reallocate_presc_lable">Care Plus - Reallocate Prescription</string>
+
+    <string name="prms_update_presc_lable">Care Plus - Update Prescription</string>
+
 </resources>
