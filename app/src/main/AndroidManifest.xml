@@ -9,6 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CarePlus">
+        <activity android:name=".PMS.Pms_Edit_clinical_record"></activity>
+        <activity android:name=".PMS.Pms_clinical_record_list" />
+        <activity android:name=".PMS.Pms_clinical_patient_list" />
+        <activity android:name=".PMS.Pms_edit_patient_basic_info" />
+        <activity android:name=".PMS.pms_patient_basic_list" />
+        <activity android:name=".PMS.Pms_clinic_record_detailed" />
+        <activity android:name=".PMS.Pms_patient_list_detailed" />
+        <activity android:name=".PMS.Pms_patient_list" />
+        <activity android:name=".PMS.Pms_add_clinical_record" />
+        <activity android:name=".PMS.Pms_add_patient" />
+        <activity android:name=".PMS.Pms_bmi_calculator" />
+        <activity android:name=".PMS.Pms_home" />
         <activity android:name=".Login_main" android:label="@string/login_lbl"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>

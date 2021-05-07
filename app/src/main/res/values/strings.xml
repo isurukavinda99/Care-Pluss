@@ -28,6 +28,46 @@
     <string name="com_forgot_pw">Forgot Password?</string>
 
     <!--pms strings-->
+    <string name="pms_add_patient">Add Patient</string>
+    <string name="pms_view_patient_list">Patient List</string>
+    <string name="pms_add_clinical_record">Add Record</string>
+    <string name="pms_bmi_calculator">BMI Calculator</string>
+    <string name="pms_content_desc">Image View</string>
+    <string name="pms_calculate">Calculate</string>
+    <string name="pms_height">Height(Centimeters)</string>
+    <string name="pms_weight">Weight(Kilograms)</string>
+    <string name="pms_bmi_result">Your BMI is</string>
+    <string name="pms_reset">Reset</string>
+    <string name="pms_bed_no">Bed No</string>
+    <string name="pms_action">Action</string>
+
+
+    <string name="pms_add_patient_id">Patient ID</string>
+    <string name="pms_add_patient_name">Patient Name</string>
+    <string name="pms_add_patient_fname">First Name</string>
+    <string name="pms_add_patient_lname">Last Name</string>
+    <string name="pms_add_patient_dob">Date Of Birth</string>
+    <string name="pms_add_patient_age">Age</string>
+    <string name="pms_add_patient_guardian">Guardian Name</string>
+    <string name="pms_add_patient_contact">Contact Number</string>
+    <string name="pms_add_patient_Address">Address</string>
+    <string name="pms_add_patient_reason">Reason for Stay</string>
+    <string name="pms_add_patient_admit">Admitted Date</string>
+    <string name="pms_add_patient_additional">Additional Info</string>
+
+    <!-- hints-->
+    <string name="pms_hint_patient_id">Patient Id</string>
+    <string name="pms_hint_patient_name">Patient Name</string>
+    <string name="pms_hint_patient_date">Date</string>
+    <string name="pms_hint_patient_bp">Blood Pressure</string>
+    <string name="pms_hint_patient_diagnosis">Diagnosis</string>
+    <string name="pms_hint_patient_other">Others</string>
+
+    <!--check box -->
+
+    <string name="pms_check_box">I herby certify that the patient has diagnoised properly by me</string>
+
+
     <!--mms strings-->
     <!--wms strings-->
     <!--prms strings-->
