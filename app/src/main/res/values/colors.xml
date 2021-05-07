@@ -17,6 +17,9 @@
 
     <!--pms color-->
     <!--mms color-->
+    <color name="mms_color_ash_light">#D1D0CE</color>
+    <color name="mms_color_ash_mid">#777777</color>
+    <color name="mms_color_ash_dark">#5E5E5E</color>
     <!--wms color-->
     <!--prms color-->
 

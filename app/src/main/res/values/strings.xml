@@ -19,7 +19,7 @@
     <string name="com_workout">Workout</string>
 
     <!--text fealds-->
-    <string name="com_full_name">Full Name</string>
+    <string name = "com_full_name">Full Name</string>
     <string name="com_dob">Date of Birth</string>
     <string name="com_phone">Phone</string>
     <string name="com_email">Email</string>
@@ -68,7 +68,43 @@
     <string name="pms_check_box">I herby certify that the patient has diagnoised properly by me</string>
 
 
+
+
+
     <!--mms strings-->
+    <string name="mms_meal_planner">Meal Planner</string>
+    <string name="mms_add_new_plan">Add new meal plan</string>
+    <string name="mms_view_planned_meals">View meal plans</string>
+    <string name="mms_measure_nutrients">Supplement manager</string>
+
+    <!--add new meal plan-->
+    <string name="mms_new_meal_plan">New meal plan</string>
+    <string name="mms_select_patient_type">Patient type</string>
+    <string name="mms_select_day">Day of week</string>
+    <string name="mms_select_breakfast">Breakfast</string>
+    <string name="mms_select_lunch">Lunch</string>
+    <string name="mms_select_dinner">Dinner</string>
+    <string name="mms_select_plan_name">Plan name</string>
+
+    <string name="mms_breakfast">Breakfast</string>
+    <string name="mms_lunch">Lunch</string>
+    <string name="mms_dinner">Dinner</string>
+
+
+    <!--Supplement manger form-->
+    <string name="mms_select_supplement">Supplement code here</string>
+    <string name="mms_supplement_code">Supplement code</string>
+    <string name="mms_supplement_name">Supplement name</string>
+    <string name="mms_show">Show</string>
+    <string name="mms_sp1">Show</string>
+    <string name="mms_sp2">Show</string>
+    <string name="mms_sp3">Show</string>
+    <string name="mms_sp4">Show</string>
+    <string name="mms_sp5">Show</string>
+
+       <!--mms end-->
+
+
     <!--wms strings-->
     <!--prms strings-->
 

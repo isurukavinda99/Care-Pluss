@@ -9,12 +9,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.careplus.mms.Mms_dashboard;
+import android.os.ConditionVariable;
+
 import com.example.careplus.PMS.Pms_home;
 import com.example.careplus.R;
 import com.example.careplus.database.DatabaseHelper;
 import com.example.careplus.database.DatabaseTable;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button btnMeal;//MMS_create a button object
 
     //creating button_patient object
     Button button_patient;
@@ -29,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         //matching id to button_patient object
         button_patient = findViewById(R.id.btn_patient);
 
+        //MMS_get reference
+        btnMeal = findViewById(R.id.btnMeal);
+
 
         button_patient.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +45,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent patient_home = new Intent(getApplicationContext(), Pms_home.class);
                 startActivity(patient_home);
 
+            }
+        });
+
+        //MMS_create an event listner
+        btnMeal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //MMS_create an intent
+                Intent mms_intent = new Intent(getApplicationContext(),Mms_dashboard.class);
+                startActivity(mms_intent);
             }
         });
 

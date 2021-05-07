@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mms.Mms_supplementManager">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mms_empty_bg"
+        tools:context=".mms.Mms_supplementManager"
+        tools:layout_editor_absoluteX="-27dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/txtMainCard"
+            android:layout_width="335dp"
+            android:layout_height="525dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="112dp"
+            android:background="@drawable/mms_card_main"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="532dp"
+            android:text="@string/mms_show"
+            app:backgroundTint="@color/com_color_save"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/selectSupplement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="364dp"
+            android:ems="10"
+            android:hint="@string/mms_select_supplement"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/txtMainCard"
+            app:layout_constraintTop_toTopOf="@+id/txtMainCard" />
+
+        <TextView
+            android:id="@+id/txtDispalyCode"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginLeft="92dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/mms_card_normal_light"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="@string/mms_supplement_code"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/com_color_teal"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:drawableTintMode="add"
+            app:layout_constraintStart_toStartOf="@+id/txtMainCard"
+            app:layout_constraintTop_toTopOf="@+id/txtMainCard"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtDisplaySp1"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/mms_card_normal_white"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="sp001"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/com_color_teal"
+            android:textSize="12sp"
+            app:drawableTintMode="add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtDisplaySp3"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="208dp"
+            android:background="@drawable/mms_card_normal_white"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="sp003"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/com_color_teal"
+            android:textSize="12sp"
+            app:drawableTintMode="add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtDisplaySp4"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="232dp"
+            android:background="@drawable/mms_card_normal_white"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="sp004"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/com_color_teal"
+            android:textSize="12sp"
+            app:drawableTintMode="add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtDisplaySp5"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="256dp"
+            android:background="@drawable/mms_card_normal_white"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="sp005"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/com_color_teal"
+            android:textSize="12sp"
+            app:drawableTintMode="add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtDisplaySp6"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="280dp"
+            android:background="@drawable/mms_card_normal_white"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="sp006"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/com_color_teal"
+            android:textSize="12sp"
+            app:drawableTintMode="add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtDisplaySp2"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="184dp"
+            android:background="@drawable/mms_card_normal_white"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="sp002"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/com_color_teal"
+            android:textSize="12sp"
+            app:drawableTintMode="add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/displaySname"
+            android:layout_width="300dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="352dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/displayUseFor"
+            android:layout_width="300dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="388dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

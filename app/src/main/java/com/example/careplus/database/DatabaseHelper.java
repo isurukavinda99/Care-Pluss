@@ -11,10 +11,13 @@ import androidx.annotation.Nullable;
 import com.example.careplus.PMS.clinicalModel;
 import com.example.careplus.PMS.patientModel;
 
+import com.example.careplus.mms.Mms_mealPlanModel;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
+
 
     public static final String DATABASE_NAME = "carePlusInfo.db";
 
@@ -22,12 +25,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, 1);
         SQLiteDatabase db = getWritableDatabase();
         onCreate(db);
+
+
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
 
         try {
+
 
 
             /*exe crete pms table*/
@@ -37,12 +43,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
             db.execSQL(DatabaseTable.BeaHeadCard.CREATE_TABLE_STRING);
 
+
             /*exe create mms tables*/
+
             db.execSQL(DatabaseTable.MealPlan.CREATE_TABLE_STRING);
 
             db.execSQL(DatabaseTable.Portion.CREATE_TABLE_STRING);
 
             db.execSQL(DatabaseTable.PatentHasMealPlan.CREATE_TABLE_STRING);
+
+
+
 
             /*exe create wms tables*/
             db.execSQL(DatabaseTable.WorkoutPlan.CREATE_TABLE_STRING);
@@ -538,6 +549,106 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }//end of patient update
 
 
+
+    //MMS_method for view all meal plans
+    public List<Mms_mealPlanModel> viewMealPlans() {
+
+        List<Mms_mealPlanModel> mealPlans = new ArrayList();
+        SQLiteDatabase db = getReadableDatabase();
+        String query = "SELECT * FROM " + DatabaseTable.MealPlan.TABLE_NAME;
+
+        Cursor cursor = db.rawQuery(query, null);
+
+        if (cursor.moveToFirst()) {
+            do {
+                Mms_mealPlanModel mealPlan = new Mms_mealPlanModel();
+                mealPlan.setId(cursor.getInt(0));
+                mealPlan.setPlanName(cursor.getString(1));
+                mealPlan.setPatientType(cursor.getString(2));
+                mealPlan.setDay(cursor.getString(3));
+                mealPlan.setBreakfast(cursor.getString(4));
+                mealPlan.setLunch(cursor.getString(5));
+                mealPlan.setDinner(cursor.getString(6));
+
+                mealPlans.add(mealPlan);
+
+            } while (cursor.moveToNext());
+
+
+        }
+        return mealPlans;
+    }// end getMealPlan method
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //MMS_method for get one plan
+    public Mms_mealPlanModel getMealPlan(int id){
+
+        SQLiteDatabase db = getWritableDatabase();
+
+        String[] columns= {DatabaseTable.MealPlan.PLAN_ID,DatabaseTable.MealPlan.PLAN_NAME,DatabaseTable.MealPlan.PLAN_TYPE,
+                DatabaseTable.MealPlan.PLAN_DAY,
+                DatabaseTable.MealPlan.BREAKFAST,
+                DatabaseTable.MealPlan.LUNCH,
+                DatabaseTable.MealPlan.DINNER};
+
+        String[] id_column  = {String.valueOf(id)};//MMS_selection args
+
+        Cursor cursor = db.query(DatabaseTable.MealPlan.TABLE_NAME,columns,DatabaseTable.MealPlan.PLAN_ID + "= ?",id_column,null,null,null);
+
+        Mms_mealPlanModel mealPlanModel;//instantiate Mms_mealPlanModel class
+
+        if (cursor != null){
+
+            cursor.moveToFirst();
+            mealPlanModel = new Mms_mealPlanModel(
+                    cursor.getInt(0),
+                    cursor.getString(1),
+                    cursor.getString(2),
+                    cursor.getString(3),
+                    cursor.getString(4),
+                    cursor.getString(5),
+                    cursor.getString(6)
+            );
+
+            return mealPlanModel;//return object
+        }
+
+        return  null;
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public int updateMealPlan(Mms_mealPlanModel mealPlanModel){
+
+        SQLiteDatabase db = getWritableDatabase();
+
+        ContentValues plan = new ContentValues();//MMS_instantiate ContentValues
+
+        plan.put(DatabaseTable.MealPlan.PLAN_NAME,mealPlanModel.getPlanName());
+        plan.put(DatabaseTable.MealPlan.PLAN_TYPE, mealPlanModel.getPatientType());
+        plan.put(DatabaseTable.MealPlan.PLAN_DAY, mealPlanModel.getDay());
+        plan.put(DatabaseTable.MealPlan.BREAKFAST, mealPlanModel.getBreakfast());
+        plan.put(DatabaseTable.MealPlan.LUNCH, mealPlanModel.getLunch());
+        plan.put(DatabaseTable.MealPlan.DINNER, mealPlanModel.getDinner());
+
+        int status = db.update(DatabaseTable.MealPlan.TABLE_NAME,plan,DatabaseTable.MealPlan.PLAN_ID + "=?", new String[]{String.valueOf(mealPlanModel.getId())});
+
+        db.close();
+
+        return  status;
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void deleteMealPlan(int id){
+
+        SQLiteDatabase db = getWritableDatabase();
+
+        db.delete(DatabaseTable.MealPlan.TABLE_NAME,DatabaseTable.MealPlan.PLAN_ID + "=?",new String[]{String.valueOf(id)});
+
+        db.close();
+    }
 
 
 

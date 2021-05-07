@@ -21,7 +21,16 @@
         <activity android:name=".PMS.Pms_add_patient" />
         <activity android:name=".PMS.Pms_bmi_calculator" />
         <activity android:name=".PMS.Pms_home" />
+
+        <activity android:name=".mms.Mms_updateEntry" />
+        <activity android:name=".mms.Mms_viewMealPlans" />
+        <activity android:name=".mms.Mms_supplementManager" />
+        <activity android:name=".mms.Mms_viewMealPlan_usingDays" />
+        <activity android:name=".mms.Mms_addNewPlan" />
+        <activity android:name=".mms.Mms_dashboard" />
+
         <activity android:name=".Login_main" android:label="@string/login_lbl"></activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

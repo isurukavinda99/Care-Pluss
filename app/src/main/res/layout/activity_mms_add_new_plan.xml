@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mms.Mms_addNewPlan">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mms_empty_bg"
+        tools:context=".mms.Mms_addNewPlan">
+
+    <TextView
+        android:id="@+id/txtMainCard"
+        android:layout_width="335dp"
+        android:layout_height="525dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/mms_card_main"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="252dp"
+        android:layout_marginLeft="252dp"
+        android:layout_marginTop="548dp"
+        android:text="@string/com_cancel"
+        app:backgroundTint="@color/com_color_cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/button9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSavePlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="548dp"
+        android:text="@string/com_save"
+        app:backgroundTint="@color/com_color_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editDay"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="92dp"
+            android:ems="10"
+            android:hint="@string/mms_select_patient_type"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/txtMainCard"
+            app:layout_constraintTop_toTopOf="@+id/txtMainCard" />
+
+    <EditText
+        android:id="@+id/editPlanName"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/mms_select_plan_name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtMainCard"
+        app:layout_constraintTop_toTopOf="@+id/txtMainCard" />
+
+        <EditText
+            android:id="@+id/editPatientType"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="160dp"
+            android:ems="10"
+            android:hint="@string/mms_select_day"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/txtMainCard"
+            app:layout_constraintTop_toTopOf="@+id/txtMainCard" />
+
+    <EditText
+        android:id="@+id/editBreakfast"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="228dp"
+        android:ems="10"
+        android:hint="@string/mms_select_breakfast"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtMainCard"
+        app:layout_constraintTop_toTopOf="@+id/txtMainCard" />
+
+    <EditText
+        android:id="@+id/editLunch"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="296dp"
+        android:ems="10"
+        android:hint="@string/mms_select_lunch"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtMainCard"
+        app:layout_constraintTop_toTopOf="@+id/txtMainCard" />
+
+    <EditText
+        android:id="@+id/editDinner"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="360dp"
+        android:ems="10"
+        android:hint="@string/mms_select_dinner"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtMainCard"
+        app:layout_constraintTop_toTopOf="@+id/txtMainCard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
