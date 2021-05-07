@@ -218,8 +218,8 @@ public class DatabaseTable {
                 " "+EXE_NAME+" varchar(60) not null , " +
                 " "+EXE_AREA+" varchar(60) not null , " +
                 " "+EXE_STEPS+" varchar(60) not null ," +
-                " "+PLAN_ID+" integer not null , " +
-                " foreign key("+PLAN_ID+") references "+WorkoutPlan.TABLE_NAME+"("+WorkoutPlan.PLAN_ID+") on delete cascade on update cascade ) ";
+                " "+PLAN_ID+" integer )";
+               // " foreign key("+PLAN_ID+") references "+WorkoutPlan.TABLE_NAME+"("+WorkoutPlan.PLAN_ID+") on delete cascade on update cascade ) ";
 
     }
 

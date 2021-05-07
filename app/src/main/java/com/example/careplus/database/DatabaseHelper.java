@@ -12,6 +12,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static final String DATABASE_NAME = "carePlusInfo.db";
 
+
+
     public DatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, 1);
         SQLiteDatabase db = getWritableDatabase();
@@ -82,7 +84,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         /*
             * table name must be existing table name or names
             * columns is array ["col_name1" , "col_name2"...] if you want to select all then simply ["*"]
-            * where close ex - "where id = 1" convert this to "id ?" !important dont put 'where' and values inside where closes
+            * where close ex - "where id = 1" convert this to "id ?" !important don't put 'where' and values inside where closes
             * put null as the parameter when there is no any selection
             * whereArgs this contains values that map to '?' in whew close  ! please putt null when there is no selection args
             * sorting order look MAD Lab sheet this same as its sorting order
@@ -108,14 +110,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         /*
             * Table name
             * values -> this is object of ContentValue , put column name and new value as key and value
-            * where -> "where username like 10" this should be "username like ?" , dont put 'where' and values inside hear
+            * where -> "where username like 10" this should be "username like ?" , don't put 'where' and values inside hear
             * whereArgs -> whereArgs this contains values that map to '?' in whew close
             * return effected row count
          */
-
+        int effected_rows = 0;
         SQLiteDatabase db = getWritableDatabase();
         try{
-            int effected_rows = db.update(
+             effected_rows = db.update(
                     TABLE_NAME ,
                     values,
                     where,
@@ -127,10 +129,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
 
 
-        return 1;
+        return effected_rows;
     }
 
-    public void delete(String TABLE_NAME , String where , String whereArgs[]){
+    public int delete(String TABLE_NAME , String where , String whereArgs[]){
 
         /*
             *where -> "where username like 10" this should be "username like ?" , dont put 'where' and values inside hear
@@ -140,7 +142,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         SQLiteDatabase db = getWritableDatabase();
         int effected_rows = db.delete(TABLE_NAME , where , whereArgs);
-
+        return effected_rows;
     }
 
 

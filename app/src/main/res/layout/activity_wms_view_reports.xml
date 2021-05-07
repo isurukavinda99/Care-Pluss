@@ -8,23 +8,40 @@
     android:background="@drawable/wms_view_report_back"
     >
 
+    <EditText
+        android:id="@+id/editText_date2"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_PlanId" />
+
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/button_delete2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="548dp"
+        android:onClick="delete"
         android:text="Delete"
         app:backgroundTint="#A45A52"
+        app:layout_constraintBottom_toBottomOf="@+id/button_update2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.879"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/button_update2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="548dp"
+        android:onClick="update"
         android:text="Update"
         app:backgroundTint="#4F97A3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +52,10 @@
     <SearchView
         android:layout_width="238dp"
         android:layout_height="34dp"
-        android:layout_marginTop="124dp"
+        android:queryHint="Search Here"
+        android:iconifiedByDefault="false"
+        android:id="@+id/search_PlanId"
+        android:layout_marginTop="140dp"
         android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.774"
@@ -43,91 +63,49 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName13"
+        android:id="@+id/editText_month"
         android:layout_width="332dp"
         android:layout_height="54dp"
-        android:layout_marginTop="484dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
+        android:hint="Month"
         android:inputType="textPersonName"
-        android:text="Now Weight:"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName12"
-        android:layout_width="332dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="420dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Then Weight:"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName11"
-        android:layout_width="332dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="360dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="End Date:"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName8"
-        android:layout_width="332dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="296dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Start Date:"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_weight" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/editText_weight"
         android:layout_width="332dp"
         android:layout_height="54dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="84dp"
         android:ems="10"
+        android:hint="Weight"
         android:inputType="textPersonName"
-        android:text="Age:"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="332dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="168dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Patient ID:"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_PatientID2" />
+
+    <EditText
+        android:id="@+id/editText_PatientID2"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="Patient ID"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_PlanId" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/MonthlyReport"
         android:layout_width="348dp"
         android:layout_height="60dp"
         android:layout_marginTop="48dp"

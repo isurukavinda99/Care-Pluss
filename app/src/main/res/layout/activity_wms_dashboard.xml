@@ -22,41 +22,41 @@
         app:layout_constraintVertical_bias="0.767" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/btnReport"
         android:layout_width="163dp"
         android:layout_height="113dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="464dp"
         android:onClick="goToWmsViewWorkoutReport"
-        android:text="View Patient Monthly Report"
+        android:text="Monthly Report"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/btnPlans"
         android:layout_width="164dp"
         android:layout_height="114dp"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="296dp"
         android:onClick="goToWmsViewWorkoutPlan"
-        android:text="View Workout Plans"
+        android:text="Workout Plans"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSchedule"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintHorizontal_bias="0.898"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/btnSchedule"
         android:layout_width="160dp"
         android:layout_height="116dp"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="296dp"
         android:onClick="goToWmsCreateWorkout"
-        android:text="Create Workout Schedule"
+        android:text="Workout Schedule"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
