@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        DatabaseHelper mydb = new DatabaseHelper(this);
+        DatabaseHelper mms_db = new DatabaseHelper(this);//MMS_instantiate databaseHelper class
 
-        //MMS_link btnMeal button with xml
+        //MMS_get reference
         btnMeal = findViewById(R.id.btnMeal);
 
         //MMS_create an event listner

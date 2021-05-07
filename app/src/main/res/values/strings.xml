@@ -34,70 +34,35 @@
     <!--mms strings-->
     <string name="mms_meal_planner">Meal Planner</string>
     <string name="mms_add_new_plan">Add new meal plan</string>
-    <string name="mms_view_planned_meals">View meal plan</string>
-    <string name="mms_update_meal_plans">Update meal plan</string>
-    <string name="mms_measure_nutrients">Measure nutrients</string>
+    <string name="mms_view_planned_meals">View meal plans</string>
+    <string name="mms_measure_nutrients">Supplement manager</string>
 
     <!--add new meal plan-->
     <string name="mms_new_meal_plan">New meal plan</string>
-    <string name="mms_select_patient_type">Select patient type</string>
-    <string name="mms_select_date">Select date</string>
+    <string name="mms_select_patient_type">Patient type</string>
+    <string name="mms_select_day">Day of week</string>
     <string name="mms_select_breakfast">Breakfast</string>
     <string name="mms_select_lunch">Lunch</string>
     <string name="mms_select_dinner">Dinner</string>
+    <string name="mms_select_plan_name">Plan name</string>
 
-    <!--add new meal-->
-    <string name="mms_new_meal">Add meal</string>
     <string name="mms_breakfast">Breakfast</string>
     <string name="mms_lunch">Lunch</string>
     <string name="mms_dinner">Dinner</string>
-    <string name="mms_add_food_item1">Food item 1</string>
-    <string name="mms_add_food_item2">Food item 2</string>
-    <string name="mms_add_food_item3">Food item 3</string>
-    <string name="mms_add_food_item4">Food item 4</string>
-    <string name="mms_add_dessert">Dessert</string>
-
-    <!--view meal plan1-->
-
-    <string name="mms_display_week_no">Week 1</string>
-    <string name="mms_display_month_with_year">February 2021</string>
-    <string name="mms_display_monday">Monday</string>
-    <string name="mms_display_tuesday">Tuesday</string>
-    <string name="mms_display_wednesday">Wednesday</string>
-    <string name="mms_display_thursday">Thursday</string>
-    <string name="mms_display_friday">Friday</string>
-    <string name="mms_display_saturday">Saturday</string>
-    <string name="mms_display_sunday">Sunday</string>
-
-    <!--view and update meal plan-->
-    <string name="mms_display_day_of_week">Monday</string>
-    <string name="mms_display_date_full">21/2/2021</string>
-    <string name="mms_search">Search here</string>
-    <string name="mms_display_disease_diabetics">Diabetics</string>
-    <string name="mms_display_disease_kidney">Kidney disease</string>
-    <string name="mms_display_disease_burns">Burns</string>
-    <string name="mms_display_disease_heart">Heart disease</string>
-    <string name="mms_display_disease_drug_addicted">Drug addicted</string>
-
-    <!--measure nutrients form-->
-    <string name="mms_select_food">Select food</string>
-    <string name="mms_select_serving_size">Serving size</string>
-    <string name="mms_select_quantity">Quantity</string>
-    <string name="mms_calculate">Calculate</string>
 
 
-    <!--measure nutrients table-->
-    <string name="mms_food_name">Food :</string>
-    <string name="mms_serving_size">Serving size :</string>
-    <string name="mms_quantity">Quantity :</string>
-    <string name="mms_calories">Calories</string>
-    <string name="mms_carbohydrate">Carbohydrate</string>
-    <string name="mms_protein">Protein</string>
-    <string name="mms_fat">Fat</string>
-    <string name="mms_fibers">Fibers</string>
-    <string name="mms_sugar">Sugar</string>
-    <string name="mms_btn_ok">OK</string>
-    <!--mms end-->
+    <!--Supplement manger form-->
+    <string name="mms_select_supplement">Supplement code here</string>
+    <string name="mms_supplement_code">Supplement code</string>
+    <string name="mms_supplement_name">Supplement name</string>
+    <string name="mms_show">Show</string>
+    <string name="mms_sp1">Show</string>
+    <string name="mms_sp2">Show</string>
+    <string name="mms_sp3">Show</string>
+    <string name="mms_sp4">Show</string>
+    <string name="mms_sp5">Show</string>
+
+       <!--mms end-->
 
 
     <!--wms strings-->

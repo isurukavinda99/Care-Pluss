@@ -94,58 +94,81 @@ public class DatabaseTable {
     }
 
 
-    /*meal plan Table*/
+    //meal plan Table
     public class MealPlan{
 
-        /*restrict creating objects*/
+        //restrict creating objects
         private MealPlan(){}
 
-        /*Table name*/
+        //Table name
         public static final String TABLE_NAME = "meal_plan";
 
-        /*Table properties*/
+        //Table properties
         public static final String PLAN_ID = "id";
         public static final String PLAN_NAME = "plan_name";
         public static final String PLAN_TYPE = "plan_type";
         public static final String PLAN_DAY = "day";
+        public static final String BREAKFAST = "breakfast";
+        public static final String LUNCH = "lunch";
+        public static final String DINNER = "dinner";
 
-        /*Create String*/
-        public static final String CREATE_TABLE_STRING = "create table if not exists "+TABLE_NAME+" (" +
-                " "+PLAN_ID+" integer not null primary key autoincrement , " +
-                " "+PLAN_NAME+" varchar(60) not null , " +
-                " "+PLAN_TYPE+" varchar(60) not null , " +
-                " "+PLAN_DAY+" varchar(20) not null)";
+        //Create String
+        public static final String CREATE_TABLE_STRING = "create table if not exists "+TABLE_NAME +
+                " ("+PLAN_ID+" integer not null primary key autoincrement,"
+                + PLAN_NAME + " varchar(60) not null ,"
+                + PLAN_TYPE + " varchar(60) not null , "
+                + PLAN_DAY + " varchar(10) not null ,"
+                + BREAKFAST + " varchar(100) not null , "
+                + LUNCH + " varchar(100) not null , "
+                + DINNER + " varchar(100) not null )";
+
 
 
     }
 
-    /*portion Table*/
+
+
+
+
+
+    //portion Table
     public class Portion{
 
-        /*restrict creating objects*/
+        //restrict creating objects
         private Portion(){}
 
-        /*Table name*/
+        //Table name
         public static final String TABLE_NAME = "portion";
 
-        /*Table properties*/
+        //Table properties
         public static final String PORTION_ID = "id";
         public static final String PORTION_NAME = "portion_name";
-        public static final String PORTION_SIZE = "size";
-        public static final String PLAN_ID_FK = "plan_id";
+        public static final String CALORIES = "calories";
+        public static final String CARBS = "carbs";
+        public static final String PROTEIN = "protein";
+        public static final String FAT = "fat";
+        public static final String SUGAR = "sugar";
+        public static final String SERVING_SIZE = "size";
+        public static final String QUANTITY = "quantity";
+        private static final String PLAN_ID_FK = "plan_id";
 
         /*Create String*/
-        public static final String CREATE_TABLE_STRING= "create table if not exists "+TABLE_NAME+"(" +
-                " "+PORTION_ID+" integer not null primary key autoincrement , " +
+        public static final String CREATE_TABLE_STRING = "create table if not exists " +TABLE_NAME +
+                "( "+PORTION_ID+" integer not null primary key  autoincrement, " +
                 " "+PORTION_NAME+" varchar(60) not null , " +
-                " "+PORTION_SIZE+" varchar(60) not null , " +
-                " "+PLAN_ID_FK+" integer not null ," +
-                " foreign key("+PLAN_ID_FK+") references "+MealPlan.TABLE_NAME+"("+MealPlan.PLAN_ID+") on delete cascade on update cascade)";
-
+                " "+CALORIES+" integer not null , " +
+                " "+CARBS+" integer not null , " +
+                " "+PROTEIN+" integer not null , " +
+                " "+FAT+" integer not null , " +
+                " "+SUGAR+" integer not null , " +
+                " "+SERVING_SIZE+" varchar(50) not null , " +
+                " "+QUANTITY+" integer not null , " +
+                " "+PLAN_ID_FK+" integer," +
+                " foreign key("+PLAN_ID_FK+") references "+MealPlan.TABLE_NAME+"("+MealPlan.PLAN_ID+") on delete cascade on update cascade) ";
 
     }
 
-    /*patent many to may table Table*/
+    /*patent many to many table Table*/
     public class PatentHasMealPlan{
 
         /*restrict creating objects*/
