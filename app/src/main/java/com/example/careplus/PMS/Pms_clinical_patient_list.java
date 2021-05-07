@@ -33,6 +33,8 @@ public class Pms_clinical_patient_list extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pms_clinical_patient_list);
 
+        this.setTitle("Care Plus|Admitted Patient");
+
         clinical_patient_dbHelp = new DatabaseHelper(this);
         clinical_patient_listview = findViewById(R.id.ListView_clinical_patient_list);
         context = this;

@@ -52,12 +52,12 @@ public class Pms_bmi_calculator extends AppCompatActivity {
 
 
 
-                    double rounded_bmi = Math.round(bmi*10.0)/10.0;
+                    //double rounded_bmi = Math.round(bmi*10.0)/10.0;
 
 
-                    String bmi_type = findBmiCategory(rounded_bmi);
+                    String bmi_type = findBmiCategory(bmi);
 
-                    numeric_bmi.setText(String.valueOf(rounded_bmi) + " " + bmi_type);
+                    numeric_bmi.setText(String.valueOf(bmi) + " " + bmi_type);
 
                 }
 
@@ -77,7 +77,8 @@ public class Pms_bmi_calculator extends AppCompatActivity {
     public double calculateBMI(double height, double weight){
 
         double bmi =  (weight / (0.0001 * ( height * height )));
-        return bmi;
+
+        return Math.round(bmi*10.0)/10.0;
 
 
 

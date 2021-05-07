@@ -3,14 +3,14 @@ package com.example.careplus.PMS;
 public class clinicalModel {
 
     private int clinical_patient_id, record_id;
-    private long record_date;
+    private String record_date;
     private String diagnosis;
     private double blood_pressure, blood_glucose;
 
     public clinicalModel() {
     }
 
-    public clinicalModel(int record_id, long record_date, String diagnosis, double blood_pressure, double blood_glucose) {
+    public clinicalModel(int record_id, String record_date, String diagnosis, double blood_pressure, double blood_glucose) {
         this.record_id = record_id;
         this.record_date = record_date;
         this.diagnosis = diagnosis;
@@ -18,7 +18,7 @@ public class clinicalModel {
         this.blood_glucose = blood_glucose;
     }
 
-    public clinicalModel(int clinical_patient_id, int record_id, long record_date, String diagnosis, double blood_pressure, double blood_glucose) {
+    public clinicalModel(int clinical_patient_id, int record_id, String record_date, String diagnosis, double blood_pressure, double blood_glucose) {
         this.clinical_patient_id = clinical_patient_id;
         this.record_id = record_id;
         this.record_date = record_date;
@@ -50,11 +50,11 @@ public class clinicalModel {
         this.record_id = record_id;
     }
 
-    public long getRecord_date() {
+    public String getRecord_date() {
         return record_date;
     }
 
-    public void setRecord_date(long record_date) {
+    public void setRecord_date(String record_date) {
         this.record_date = record_date;
     }
 

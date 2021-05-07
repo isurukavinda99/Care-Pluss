@@ -412,7 +412,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
                 cRmodel.setRecord_id(cursor.getInt(0));
-                cRmodel.setRecord_date(cursor.getLong(1));
+                cRmodel.setRecord_date(cursor.getString(1));
                 cRmodel.setBlood_pressure(Double.parseDouble(cursor.getString(2)));
                 cRmodel.setBlood_glucose(Double.parseDouble(cursor.getString(3)));
                 cRmodel.setDiagnosis(cursor.getString(4));
@@ -478,7 +478,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             clinical_model = new clinicalModel(
                     row_data.getInt(0), //recordid
                     row_data.getInt(5), //PATIENT_ID
-                    row_data.getLong(1), //record date
+                    row_data.getString(1), //record date
                     row_data.getString(4), //diagnosis
                     row_data.getDouble(2), //blood_pressure
                     row_data.getDouble(3) //blood_glucose

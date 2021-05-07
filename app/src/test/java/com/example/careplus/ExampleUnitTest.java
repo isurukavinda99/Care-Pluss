@@ -36,25 +36,24 @@ public class ExampleUnitTest {
 
         supplement_manger = new Mms_supplementManager();
         prms_separate_methods = new Prms_separate_methods();
-
-
         bmi_Test = new Pms_bmi_calculator();
 
-        bmi_Test.calculateBMI(150, 40);
-        bmi_Test.findBmiCategory(17.5);
 
     }
 
     @Test
     public void testBmiResult(){
-
-        double expectedResult = 17.5;
+        double res = bmi_Test.calculateBMI(150, 40);
+        System.out.println(res);
+        assertEquals(17.8 , res , 0.001);
 
     }
 
     @Test
     public void testBmiCategory(){
+        String res = bmi_Test.findBmiCategory(17.5);
         String expectedResult = "Underweight";
+        assertEquals(expectedResult , res);
     }
 
     @Test
