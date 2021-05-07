@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pms_backg_one_1"
-    tools:context=".PMS.Pms_add_patient">
+    tools:context=".PMS.Pms_edit_patient_basic_info"
+    android:background="@drawable/pms_backg_one"
+
+    >
+
 
     <TextView
-
-        android:id="@+id/pms_add_back"
+        android:id="@+id/editbackground"
         android:layout_width="363dp"
         android:layout_height="628dp"
         android:background="@drawable/pms_box"
@@ -21,15 +23,15 @@
         app:layout_constraintVertical_bias="0.889" />
 
     <EditText
-        android:id="@+id/add_patient_txt_contact"
+        android:id="@+id/update_patient_txt_contact"
         android:layout_width="298dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:hint="@string/pms_add_patient_contact"
+        android:inputType="phone"
         android:textColorHint="@color/com_color_teal"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.469"
@@ -38,7 +40,7 @@
         app:layout_constraintVertical_bias="0.486" />
 
     <EditText
-        android:id="@+id/add_patient_txt_address"
+        android:id="@+id/update_patient_txt_address"
         android:layout_width="298dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
@@ -54,7 +56,7 @@
         app:layout_constraintVertical_bias="0.563" />
 
     <EditText
-        android:id="@+id/add_patient_txt_first_name"
+        android:id="@+id/update_patient_txt_first_name"
         android:layout_width="301dp"
         android:layout_height="42dp"
         android:layout_marginTop="32dp"
@@ -71,7 +73,7 @@
         app:layout_constraintVertical_bias="0.188" />
 
     <EditText
-        android:id="@+id/add_patient_txt_bed_no"
+        android:id="@+id/update_patient_txt_bed_no"
         android:layout_width="301dp"
         android:layout_height="42dp"
         android:layout_marginTop="32dp"
@@ -88,7 +90,7 @@
         app:layout_constraintVertical_bias="0.111" />
 
     <EditText
-        android:id="@+id/add_patient_txt_last_name"
+        android:id="@+id/update_patient_txt_last_name"
         android:layout_width="302dp"
         android:layout_height="42dp"
         android:layout_marginTop="32dp"
@@ -104,7 +106,7 @@
         app:layout_constraintVertical_bias="0.266" />
 
     <EditText
-        android:id="@+id/add_patient_txt_dob"
+        android:id="@+id/update_patient_txt_dob"
         android:layout_width="303dp"
         android:layout_height="45dp"
         android:layout_marginTop="32dp"
@@ -121,7 +123,7 @@
         app:layout_constraintVertical_bias="0.345" />
 
     <EditText
-        android:id="@+id/add_patient_txt_guardian_name"
+        android:id="@+id/update_patient_txt_guardian_name"
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:layout_marginTop="32dp"
@@ -137,7 +139,7 @@
         app:layout_constraintVertical_bias="0.414" />
 
     <EditText
-        android:id="@+id/add_patient_txt_reason_stay"
+        android:id="@+id/update_patient_txt_reason_stay"
         android:layout_width="292dp"
         android:layout_height="44dp"
         android:layout_marginTop="32dp"
@@ -153,15 +155,15 @@
         app:layout_constraintVertical_bias="0.644" />
 
     <EditText
-        android:id="@+id/add_patient_txt_date_admitted"
+        android:id="@+id/update_patient_txt_date_admitted"
         android:layout_width="291dp"
         android:layout_height="43dp"
         android:layout_marginTop="32dp"
         android:hint="@string/pms_add_patient_admit"
-        android:inputType="text"
         android:textColorHint="@color/com_color_teal"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
@@ -170,7 +172,7 @@
         app:layout_constraintVertical_bias="0.73" />
 
     <EditText
-        android:id="@+id/add_patient_txt_additional_info"
+        android:id="@+id/update_patient_txt_additional_info"
         android:layout_width="293dp"
         android:layout_height="68dp"
         android:layout_marginTop="32dp"
@@ -186,10 +188,10 @@
         app:layout_constraintVertical_bias="0.841" />
 
     <Button
-        android:id="@+id/add_patient_btn_save"
+        android:id="@+id/update_patient_btn_update"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:text="@string/com_save"
+        android:text="Update"
         android:textSize="24sp"
         app:backgroundTint="@color/com_color_save"
         app:cornerRadius="30dp"
@@ -201,7 +203,7 @@
         app:layout_constraintVertical_bias="0.944" />
 
     <Button
-        android:id="@+id/add_patient_btn_cancel"
+        android:id="@+id/update_patient_btn_cancel"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:text="@string/com_cancel"
@@ -214,5 +216,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.944" />
+
+
+
+
+
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

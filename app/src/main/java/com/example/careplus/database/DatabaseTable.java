@@ -19,8 +19,17 @@ public class DatabaseTable {
         public static final String PATIENT_LAST_NAME = "last_name";
         public static final String PATIENT_DOB = "dob"; /*Format (dd/mm/yyyy)*/
         public static final String PATIENT_REASON = "reason";
+        public static final String PATIENT_BED_NO = "bed_no";
         public static final String PATIENT_DATE_ADMITTED = "date_admitted";
         public static final String PATIENT_ADDITIONAL_INFO = "additional_info";
+
+        //guardian details added
+        public static final String GUARDIAN_NAME = "name";
+        public static final String GUARDIAN_ADDRESS = "address";
+        public static final String GUARDIAN_CONTACT_NUMBER = "contact_number";
+
+
+
 
         /*Create String*/
         public static final String CREATE_TABLE_STRING = "create table if not exists "+TABLE_NAME +
@@ -28,30 +37,44 @@ public class DatabaseTable {
                 + PATIENT_FIRST_NAME + " varchar(60) not null ,"
                 + PATIENT_LAST_NAME + " varchar(60) not null , "
                 + PATIENT_DOB + " date not null ,"
+                + GUARDIAN_NAME+" varchar(60) not null , " //guardian name added
+                + GUARDIAN_ADDRESS+" text not null , " //guardian address added
+                + GUARDIAN_CONTACT_NUMBER+" varchar(10) not null , " //guardian contact number added
                 + PATIENT_REASON + " text not null , "
+                + PATIENT_BED_NO + " text not null , "
                 + PATIENT_DATE_ADMITTED + " date not null , "
                 + PATIENT_ADDITIONAL_INFO + " text )";
 
 
     }
 
-    /*Guardian Table*/
+
+
+
+    //commenting guardian table
+
+
+
+    //Guardian Table
+
+ /*
+
     public class Guardian{
 
-        /*restrict creating objects*/
+        //restrict creating objects
         private Guardian(){}
 
-        /*Table name*/
+        //Table name
         public static final String TABLE_NAME = "guardian";
 
-        /*Table properties*/
+        //Table properties
         public static final String GUARDIAN_ID = "gid";
         public static final String GUARDIAN_NAME = "name";
         public static final String GUARDIAN_ADDRESS = "address";
         public static final String GUARDIAN_CONTACT_NUMBER = "contact_number";
         public static final String PATIENT_ID_FK = "pid";
 
-        /*Create String*/
+        //Create String
         public static final String CREATE_TABLE_STRING = "create table if not exists " +TABLE_NAME +
                 "( "+GUARDIAN_ID+" integer not null primary key  autoincrement, " +
                 " "+GUARDIAN_NAME+" varchar(60) not null , " +
@@ -62,6 +85,7 @@ public class DatabaseTable {
 
     }
 
+    */
 
     /*Bed Head Table*/
     public class BeaHeadCard{

@@ -1,4 +1,4 @@
-package com.example.careplus;
+package com.example.careplus.PMS;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.example.careplus.PMS.Pms_clinic_record_detailed;
+import com.example.careplus.R;
 
 public class Pms_patient_list_detailed extends AppCompatActivity {
 
@@ -27,7 +30,7 @@ public class Pms_patient_list_detailed extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent full_clinical = new Intent(getApplicationContext(),Pms_clinic_record_detailed.class);
+                Intent full_clinical = new Intent(getApplicationContext(), Pms_clinic_record_detailed.class);
                 startActivity(full_clinical);
 
             }

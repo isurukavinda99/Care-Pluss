@@ -4,45 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pms_backg_one_1"
-    tools:context=".PMS.Pms_add_clinical_record">
+    tools:context=".PMS.Pms_Edit_clinical_record"
+    android:background="@drawable/pms_backg_one"
+    >
 
 
     <TextView
-        android:id="@+id/pms_sample_editC"
-        android:layout_width="346dp"
-        android:layout_height="602dp"
+        android:id="@+id/pms_background"
+        android:layout_width="339dp"
+        android:layout_height="537dp"
         android:background="@drawable/pms_box"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.759" />
+        app:layout_constraintVertical_bias="0.85" />
 
     <EditText
-        android:id="@+id/pms_add_clinical_txt_p_bp"
+        android:id="@+id/pms_edit_clinical_txt_p_bp"
         android:layout_width="287dp"
         android:layout_height="47dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
         android:hint="@string/pms_hint_patient_bp"
-        android:inputType="numberDecimal"
         android:textColor="@color/com_color_teal"
         android:textColorHint="@color/com_color_teal"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/pms_add_clinical_txt_p_id"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.479" />
+        app:layout_constraintVertical_bias="0.442" />
 
     <EditText
-        android:id="@+id/pms_add_clinical_txt_p_bgluc"
+        android:id="@+id/pms_edit_clinical_txt_p_bgluc"
         android:layout_width="287dp"
         android:layout_height="47dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
         android:hint="Blood Glucose"
         android:inputType="number"
         android:textColor="@color/com_color_teal"
@@ -54,46 +58,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/pms_add_clinical_txt_p_id"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374" />
+        app:layout_constraintVertical_bias="0.269" />
 
     <EditText
-        android:id="@+id/pms_add_clinical_txt_p_id"
-        android:layout_width="289dp"
-        android:layout_height="44dp"
-        android:hint="@string/pms_hint_patient_id"
-        android:inputType="number"
-        android:textColor="@color/com_color_teal"
-        android:textColorHint="@color/com_color_teal"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.202" />
-
-    <EditText
-        android:id="@+id/pms_add_clinical_txt_p_date"
-        android:layout_width="287dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:hint="@string/pms_hint_patient_date"
-        android:inputType="text"
-        android:textColor="@color/com_color_teal"
-        android:textColorHint="@color/com_color_teal"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="@+id/pms_add_clinical_txt_p_id"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.282" />
-
-    <EditText
-        android:id="@+id/pms_add_clinical_txt_p_diag"
+        android:id="@+id/pms_edit_clinical_txt_p_diag"
         android:layout_width="289dp"
         android:layout_height="125dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
         android:hint="@string/pms_hint_patient_diagnosis"
         android:textColor="@color/com_color_teal"
         android:textColorHint="@color/com_color_teal"
@@ -101,13 +73,13 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toStartOf="@+id/pms_add_clinical_txt_p_id"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673" />
+        app:layout_constraintVertical_bias="0.689" />
 
     <CheckBox
-        android:id="@+id/pms_add_clinical_checkbox"
+        android:id="@+id/pms_edit_clinical_checkbox"
         android:layout_width="326dp"
         android:layout_height="58dp"
         android:layout_marginEnd="22dp"
@@ -117,12 +89,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.523"
-        app:layout_constraintStart_toStartOf="@+id/pms_sample_editC"
+        app:layout_constraintStart_toStartOf="@+id/pms_background"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.826" />
+        app:layout_constraintVertical_bias="0.835" />
 
     <Button
-        android:id="@+id/pms_add_clinic_btn_save"
+        android:id="@+id/pms_edit_clinic_btn_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/com_save"
@@ -136,7 +108,7 @@
         app:layout_constraintVertical_bias="0.922" />
 
     <Button
-        android:id="@+id/pms_add_clinic_btn_cancel"
+        android:id="@+id/pms_edit_clinic_btn_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/com_cancel"
@@ -149,5 +121,43 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.922" />
 
+    <TextView
+        android:id="@+id/pms_label_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Glucose"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pms_edit_clinical_txt_p_bgluc"
+        app:layout_constraintStart_toStartOf="@+id/pms_edit_clinical_txt_p_bgluc"
+        app:layout_constraintTop_toTopOf="@+id/pms_background"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/pms_bp_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Pressure"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pms_edit_clinical_txt_p_bp"
+        app:layout_constraintStart_toStartOf="@+id/pms_edit_clinical_txt_p_bp"
+        app:layout_constraintTop_toTopOf="@+id/pms_background"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/pms_bs_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diagnosis"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pms_edit_clinical_txt_p_diag"
+        app:layout_constraintStart_toStartOf="@+id/pms_edit_clinical_txt_p_diag"
+        app:layout_constraintTop_toTopOf="@+id/pms_background"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

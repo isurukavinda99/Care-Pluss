@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pms_home"
-
     android:background="@drawable/pms_backg_one"
+
+    tools:context=".PMS.Pms_home"
 
     >
 
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="346dp"
-        android:layout_height="375dp"
+        android:id="@+id/pms_home_back"
+        android:layout_width="355dp"
+        android:layout_height="492dp"
         android:background="@drawable/pms_box"
 
         android:contentDescription="@string/pms_content_desc"
@@ -34,12 +34,27 @@
         android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/img_btn_view_patient_list"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.552"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466"
+        app:layout_constraintVertical_bias="0.351"
         app:srcCompat="@drawable/ic_pms_add_patient"
         tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/txt_view_patient_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pms_view_patient_list"
+        android:textColor="@color/com_color_teal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462" />
 
     <ImageButton
         android:id="@+id/img_btn_view_patient_list"
@@ -48,12 +63,12 @@
         android:background="@color/com_color_teal"
         android:contentDescription="TODO"
         android:tint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_add_patient"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintHorizontal_bias="0.746"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_add_patient"
+        app:layout_constraintVertical_bias="0.351"
         app:srcCompat="@drawable/ic_pms_view_record"
         tools:ignore="VectorDrawableCompat" />
 
@@ -65,13 +80,12 @@
         android:contentDescription="TODO"
         android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_view_patient_list"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.754"
-        app:srcCompat="@drawable/ic_pms_bmi_calculator"
-         />
+        app:layout_constraintVertical_bias="0.812"
+        app:srcCompat="@drawable/ic_pms_bmi_calculator" />
 
     <ImageButton
         android:id="@+id/img_btn_add_clinical_record"
@@ -80,12 +94,12 @@
         android:background="@color/com_color_teal"
         android:contentDescription="TODO"
         android:tint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_bmi_calc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.247"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.754"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_btn_add_patient"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_bmi_calc"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_pms_add_clinical_record" />
 
     <TextView
@@ -98,25 +112,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintHorizontal_bias="0.252"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.578" />
-
-    <TextView
-        android:id="@+id/txt_view_patient_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pms_view_patient_list"
-        android:textColor="@color/com_color_teal"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.746"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.578" />
+        app:layout_constraintVertical_bias="0.462" />
 
     <TextView
         android:id="@+id/txt_bmi_calculator"
@@ -128,10 +127,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintHorizontal_bias="0.77"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.831" />
+        app:layout_constraintVertical_bias="0.881" />
 
     <TextView
         android:id="@+id/txt_add_clinical_record"
@@ -143,10 +142,38 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.243"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.831" />
+        app:layout_constraintVertical_bias="0.881" />
+
+    <ImageButton
+        android:id="@+id/pms_home_to_clinical_patient"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/ic_baseline_accessible_24" />
+
+    <TextView
+        android:id="@+id/txt_admitted_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admitted Patients"
+        android:textColor="@color/com_color_teal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

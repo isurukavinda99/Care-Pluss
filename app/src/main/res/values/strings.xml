@@ -44,10 +44,13 @@
 
     <string name="pms_add_patient_id">Patient ID</string>
     <string name="pms_add_patient_name">Patient Name</string>
+    <string name="pms_add_patient_fname">First Name</string>
+    <string name="pms_add_patient_lname">Last Name</string>
     <string name="pms_add_patient_dob">Date Of Birth</string>
     <string name="pms_add_patient_age">Age</string>
     <string name="pms_add_patient_guardian">Guardian Name</string>
     <string name="pms_add_patient_contact">Contact Number</string>
+    <string name="pms_add_patient_Address">Address</string>
     <string name="pms_add_patient_reason">Reason for Stay</string>
     <string name="pms_add_patient_admit">Admitted Date</string>
     <string name="pms_add_patient_additional">Additional Info</string>

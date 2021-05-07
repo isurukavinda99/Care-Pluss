@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pms_backg_one"
-    tools:context=".Pms_bmi_calculator">
+    tools:context=".PMS.Pms_bmi_calculator">
 
 
     <TextView
@@ -19,18 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.858" />
-
-    <TextView
-        android:id="@+id/small3"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:background="@drawable/pms_box_small"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.672"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.776" />
 
     <Button
         android:id="@+id/btn_calculate_bmi"
@@ -62,27 +50,29 @@
         app:layout_constraintVertical_bias="0.884" />
 
     <TextView
-        android:id="@+id/txt_bmi_result"
-        android:layout_width="193dp"
-        android:layout_height="52dp"
+        android:id="@+id/bmi_label"
+        android:layout_width="97dp"
+        android:layout_height="33dp"
         android:text="@string/pms_bmi_result"
         android:textColor="@color/com_color_teal"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.812" />
+        app:layout_constraintVertical_bias="0.793" />
 
     <EditText
-        android:id="@+id/txt_bmi_height3"
+        android:id="@+id/bmi_calculator_height"
         android:layout_width="193dp"
         android:layout_height="52dp"
-        android:text="@string/pms_height"
+        android:hint="@string/pms_height"
         android:textColor="@color/com_color_teal"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -91,17 +81,31 @@
         app:layout_constraintVertical_bias="0.6" />
 
     <EditText
-        android:id="@+id/txt_bmi_weight"
+        android:id="@+id/bmi_calculator_weight"
         android:layout_width="193dp"
         android:layout_height="52dp"
-        android:text="@string/pms_weight"
+        android:hint="@string/pms_weight"
         android:textColor="@color/com_color_teal"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bmi_result_numeric"
+        android:layout_width="201dp"
+        android:layout_height="55dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/bmi_label"
+        app:layout_constraintStart_toEndOf="@+id/bmi_label"
+        app:layout_constraintTop_toTopOf="@+id/bmi_label" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

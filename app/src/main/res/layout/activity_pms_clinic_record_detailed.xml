@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pms_clinic_record_detailed"
+    tools:context=".PMS.Pms_clinic_record_detailed"
     android:background="@drawable/pms_backg_one_1"
     >
 
@@ -52,7 +52,7 @@
 
 
     <TextView
-        android:id="@+id/pms_add_clinical_p_id"
+        android:id="@+id/pms_add_clinical_txt_p_id"
         android:layout_width="289dp"
         android:layout_height="44dp"
         android:hint="@string/pms_hint_patient_id"
@@ -68,7 +68,7 @@
         app:layout_constraintVertical_bias="0.308" />
 
     <TextView
-        android:id="@+id/pms_add_clinical_p_diag2"
+        android:id="@+id/pms_add_clinical_txt_p_other_details"
         android:layout_width="285dp"
         android:layout_height="45dp"
         android:hint="@string/pms_hint_patient_other"
@@ -84,7 +84,7 @@
         app:layout_constraintVertical_bias="0.813" />
 
     <TextView
-        android:id="@+id/pms_add_clinical_p_diag"
+        android:id="@+id/pms_add_clinical_txt_p_diag"
         android:layout_width="287dp"
         android:layout_height="127dp"
         android:hint="@string/pms_hint_patient_diagnosis"
@@ -100,7 +100,7 @@
         app:layout_constraintVertical_bias="0.701" />
 
     <TextView
-        android:id="@+id/pms_add_clinical_p_bp"
+        android:id="@+id/pms_add_clinical_txt_p_bp"
         android:layout_width="287dp"
         android:layout_height="47dp"
         android:hint="@string/pms_hint_patient_bp"
@@ -116,7 +116,7 @@
         app:layout_constraintVertical_bias="0.536" />
 
     <TextView
-        android:id="@+id/pms_add_clinical_p_date"
+        android:id="@+id/pms_add_clinical_txt_p_date"
         android:layout_width="287dp"
         android:layout_height="40dp"
         android:hint="@string/pms_hint_patient_date"
@@ -132,7 +132,7 @@
         app:layout_constraintVertical_bias="0.464" />
 
     <TextView
-        android:id="@+id/pms_add_clinical_p_name"
+        android:id="@+id/pms_add_clinical_txt_p_name"
         android:layout_width="288dp"
         android:layout_height="50dp"
         android:hint="@string/pms_hint_patient_name"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pms_backg_one"
-    tools:context=".Pms_patient_list_detailed"
+    tools:context=".PMS.Pms_patient_list_detailed"
 
     >
 
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.919" />
 
     <TextView
-        android:id="@+id/txt_add_patient_id"
+        android:id="@+id/add_patient_txt_first_name"
         android:layout_width="301dp"
         android:layout_height="42dp"
         android:layout_marginTop="32dp"
@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.208" />
 
     <TextView
-        android:id="@+id/txt_add_patient_name"
+        android:id="@+id/add_patient_txt_last_name"
         android:layout_width="302dp"
         android:layout_height="42dp"
         android:layout_marginTop="32dp"
@@ -54,7 +54,7 @@
         app:layout_constraintVertical_bias="0.273" />
 
     <TextView
-        android:id="@+id/txt_add_patient_dob"
+        android:id="@+id/add_patient_txt_dob"
         android:layout_width="303dp"
         android:layout_height="45dp"
         android:layout_marginTop="32dp"
@@ -86,7 +86,7 @@
         app:layout_constraintVertical_bias="0.406" />
 
     <TextView
-        android:id="@+id/txt_add_patient_guardian"
+        android:id="@+id/add_patient_txt_guardian_name"
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:layout_marginTop="32dp"
@@ -102,7 +102,7 @@
         app:layout_constraintVertical_bias="0.475" />
 
     <TextView
-        android:id="@+id/txt_add_patient_contact"
+        android:id="@+id/add_patient_txt_contact"
         android:layout_width="298dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
@@ -118,7 +118,7 @@
         app:layout_constraintVertical_bias="0.548" />
 
     <TextView
-        android:id="@+id/txt_add_patient_reason"
+        android:id="@+id/add_patient_txt_reason_stay"
         android:layout_width="292dp"
         android:layout_height="44dp"
         android:layout_marginTop="32dp"
@@ -134,7 +134,7 @@
         app:layout_constraintVertical_bias="0.619" />
 
     <TextView
-        android:id="@+id/txt_add_patient_ad_date"
+        android:id="@+id/add_patient_txt_date_admitted"
         android:layout_width="291dp"
         android:layout_height="43dp"
         android:layout_marginTop="32dp"
@@ -150,7 +150,7 @@
         app:layout_constraintVertical_bias="0.685" />
 
     <TextView
-        android:id="@+id/txt_add_patient_additional"
+        android:id="@+id/add_patient_txt_additional_info"
         android:layout_width="293dp"
         android:layout_height="68dp"
         android:layout_marginTop="32dp"

@@ -6,7 +6,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context=".Pms_patient_list"
+    tools:context=".PMS.Pms_patient_list"
     android:background="@drawable/pms_backg_one"
 
 
@@ -20,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        tools:context=".Pms_patient_list"
+        tools:context=".PMS.Pms_patient_list"
         android:gravity="center_vertical"
 
         >

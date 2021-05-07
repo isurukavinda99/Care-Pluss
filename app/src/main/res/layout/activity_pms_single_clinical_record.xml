@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="5dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="18dp"
+    android:paddingRight="5dp"
+    android:background="@drawable/pms_clinical_back"
+    >
+
+    <TextView
+        android:id="@+id/single_clinical_record_record_id"
+        android:layout_width="57dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/singli_clinical_record_date"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/singli_clinical_record_date"
+        app:layout_constraintTop_toBottomOf="@+id/singli_clinical_record_date" />
+
+    <TextView
+        android:id="@+id/singli_clinical_record_date"
+        android:layout_width="62dp"
+        android:layout_height="26dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/single_clinical_record_BP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/singli_clinical_record_date"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/single_clinical_record_sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/single_clinical_record_BP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/label_clin_gluc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Glucose"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/single_clinical_record_sugar"
+        app:layout_constraintStart_toStartOf="@+id/single_clinical_record_sugar" />
+
+    <TextView
+        android:id="@+id/single_clinical_record_diagnosis"
+        android:layout_width="233dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="72dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/single_clinical_record_sugar"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/single_clinical_record_BP"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/single_clinical_record_others"
+        android:layout_width="232dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/single_clinical_record_diagnosis"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/single_clinical_record_diagnosis"
+        app:layout_constraintTop_toBottomOf="@+id/single_clinical_record_diagnosis" />
+
+    <TextView
+        android:id="@+id/label_clin_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/singli_clinical_record_date"
+        app:layout_constraintStart_toStartOf="@+id/singli_clinical_record_date" />
+
+    <TextView
+        android:id="@+id/label_clin_bp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Pressure"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/single_clinical_record_BP"
+        app:layout_constraintStart_toStartOf="@+id/single_clinical_record_BP" />
+
+    <TextView
+        android:id="@+id/label_clinic_diag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diagnosis"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/single_clinical_record_diagnosis"
+        app:layout_constraintStart_toStartOf="@+id/single_clinical_record_diagnosis" />
+
+    <TextView
+        android:id="@+id/lael_clinical_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Id"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/single_clinical_record_record_id"
+        app:layout_constraintStart_toStartOf="@+id/single_clinical_record_record_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

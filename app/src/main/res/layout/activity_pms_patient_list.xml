@@ -6,156 +6,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pms_backg_one"
-    tools:context=".Pms_home"
+    tools:context=".PMS.Pms_home"
 
     >
 
 
+    <ListView
+        android:id="@+id/patient_list_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+
     <TextView
-        android:layout_width="350dp"
-        android:layout_height="500dp"
-        android:background="@drawable/pms_box"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77" />
-
-    <EditText
-        android:layout_width="249dp"
-        android:layout_height="23dp"
-        android:background="@drawable/pms_box_small"
-        android:hint="Search by ID"
-        android:textColorHint="@color/com_color_teal"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.345"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="251dp"
-        android:layout_height="24dp"
-        android:background="@drawable/pms_box_small"
-        android:hint="Search by Name"
-
-        android:textColorHint="@color/com_color_teal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.345" />
-
-    <Button
-        android:id="@+id/btn_dmy_1"
-        android:layout_width="300dp"
+        android:id="@+id/patient_list_txt_patient_count"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="P01|Austin Silva>"
-        android:textSize="18sp"
+        android:background="@color/white"
+
+
+        android:textColor="@color/com_color_teal"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
+        app:layout_constraintVertical_bias="0.943" />
 
     <Button
-        android:id="@+id/btn_dmy_5"
-        android:layout_width="300dp"
+        android:id="@+id/patient_list_btn_add_patient"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="P06|Bandula Perera>"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:text="Add Patient"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.881" />
-
-    <Button
-        android:id="@+id/btn_dmy_4"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="P05|Chandana Rodrigo >"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.793" />
-
-    <Button
-        android:id="@+id/btn_dmy_3"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="P04|Suneth de mel >"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701" />
-
-    <Button
-        android:id="@+id/btn_dmy_2"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="P03|Fawad Ismail >"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613" />
-
-    <Button
-        android:id="@+id/btn_dmy_"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="P02|Selva Krishnan >"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.516" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:background="@color/com_color_teal"
-        android:tint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271"
-        app:srcCompat="@drawable/ic_pms_search" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:background="@color/com_color_teal"
-        android:tint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.845"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.345"
-        app:srcCompat="@drawable/ic_pms_search" />
-
-
+        app:layout_constraintVertical_bias="0.959" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,10 @@
-package com.example.careplus;
+package com.example.careplus.PMS;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.careplus.R;
 
 public class Pms_clinic_record_detailed extends AppCompatActivity {
 
