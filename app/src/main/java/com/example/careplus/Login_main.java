@@ -3,6 +3,7 @@ package com.example.careplus;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -69,7 +70,8 @@ public class Login_main extends AppCompatActivity {
                     if (user.getString(user.getColumnIndexOrThrow(DatabaseTable.User.USER_PASSWORD)).equals(password)){
 
                         /*main activoty intent gose to hear*/
-                        System.out.println("login success");
+                        Intent dashboard = new Intent(this , MainActivity.class);
+                        startActivity(dashboard);
 
                     }else{
                         Toast login_password= new Toast(this);
