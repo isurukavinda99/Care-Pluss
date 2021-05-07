@@ -29,6 +29,11 @@
         <activity android:name=".mms.Mms_addNewPlan" />
         <activity android:name=".mms.Mms_dashboard" />
 
+        <activity android:name=".wms.Wms_view_reports"></activity>
+        <activity android:name=".wms.Wms_view_plans" />
+        <activity android:name=".wms.Wms_create_schedule" />
+        <activity android:name=".wms.Wms_dashboard" />
+
         <activity android:name=".Login_main" android:label="@string/login_lbl"></activity>
 
         <activity android:name=".MainActivity">

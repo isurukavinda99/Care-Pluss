@@ -2,6 +2,7 @@ package com.example.careplus;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
@@ -10,7 +11,14 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.careplus.mms.Mms_dashboard;
+import android.view.View;
+import android.widget.Button;
+
+import com.example.careplus.wms.Wms_create_schedule;
+import com.example.careplus.wms.Wms_dashboard;
+import com.example.careplus.wms.Wms_view_reports;
 import android.os.ConditionVariable;
+import android.widget.SearchView;
 
 import com.example.careplus.PMS.Pms_home;
 import com.example.careplus.R;
@@ -64,4 +72,10 @@ public class MainActivity extends AppCompatActivity {
         Intent login = new Intent(this , Login_main.class);
         //startActivity(login);
     }
+
+    public void goToWmsDashboard(View view){
+        Intent wms = new Intent(this,Wms_dashboard.class);
+        startActivity(wms);
+    }
+
 }
