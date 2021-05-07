@@ -349,10 +349,14 @@ public class DatabaseTable {
         public static final String DRUG_BEFORE_MEAL = "before_meal";
         public static final String PRESCRIPTION_ID = "prescription_id";
 
+        /*edited 2021.4.30*/
+        public static final String DRUG_DOSE = "dose";
+
         /*Create String*/
         public static final String CREATE_TABLE_STRING = "create table if not exists "+TABLE_NAME+"(" +
                 " "+DRUG_ID+" integer not null primary key autoincrement , " +
                 " "+DRUG_NAME+" varchar(60) not null , " +
+                " "+DRUG_DOSE+" varchar(60) not null , "+
                 " "+DRUG_BEFORE_MEAL+" boolean not null default false , " +
                 " "+PRESCRIPTION_ID+" integer not null , " +
                 " foreign key("+PRESCRIPTION_ID+") references "+Prescription.TABLE_NAME+"("+Prescription.PRESC_ID+") on delete cascade on update cascade )";

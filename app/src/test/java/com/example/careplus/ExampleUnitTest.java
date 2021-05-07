@@ -4,6 +4,9 @@ import com.example.careplus.PMS.Pms_bmi_calculator;
 import com.example.careplus.mms.Mms_supplementManager;
 
 import org.junit.Before;
+import com.example.careplus.prms.Prms_separate_methods;
+
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -26,11 +29,13 @@ public class ExampleUnitTest {
 
     private Pms_bmi_calculator bmi_Test;
     private Mms_supplementManager supplement_manger;
+    private Prms_separate_methods prms_separate_methods;
 
     @Before
     public void setUp(){
 
         supplement_manger = new Mms_supplementManager();
+        prms_separate_methods = new Prms_separate_methods();
 
 
         bmi_Test = new Pms_bmi_calculator();
@@ -57,6 +62,19 @@ public class ExampleUnitTest {
 
         String result = supplement_manger.showSupplementName("sp002");
         assertEquals("Vitamin B",result);
+    }
+
+    /*prms test method*/
+    @Test
+    public void testAgeCalculator(){
+        String age = prms_separate_methods.calculate_age("02/18/1999" , "2021");
+        assertEquals("22" , age);
+    }
+
+    @Test
+    public void testGiveCorrectErrorsAgeCall(){
+        String age = prms_separate_methods.calculate_age("02/18/199a" , "2021");
+        assertEquals("-2" , age);
     }
 
 }

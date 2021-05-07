@@ -22,5 +22,7 @@
     <color name="mms_color_ash_dark">#5E5E5E</color>
     <!--wms color-->
     <!--prms color-->
+    <color name="prms_red_color">#FF0000</color>
+    <color name="prms_table_bg">#F0F0F0</color>
 
 </resources>

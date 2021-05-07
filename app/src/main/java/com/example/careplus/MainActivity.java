@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.ContentValues;
-import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
@@ -34,11 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    DatabaseHelper mydb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        mydb = new DatabaseHelper(this);
         //matching id to button_patient object
         button_patient = findViewById(R.id.btn_patient);
 
@@ -76,6 +76,12 @@ public class MainActivity extends AppCompatActivity {
     public void goToWmsDashboard(View view){
         Intent wms = new Intent(this,Wms_dashboard.class);
         startActivity(wms);
+    }
+
+    /*load prms dashboard*/
+    public void start_prms(View v){
+        Intent prms_load = new Intent(this , prms_dashboard.class);
+        startActivity(prms_load);
     }
 
 }
