@@ -44,6 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
         /*Makesure remove this line when merging */
         Intent login = new Intent(this , Login_main.class);
-        startActivity(login);
+        //startActivity(login);
     }
 }
