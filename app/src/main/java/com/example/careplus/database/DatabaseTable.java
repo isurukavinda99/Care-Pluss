@@ -27,6 +27,11 @@ public class DatabaseTable {
         public static final String GUARDIAN_NAME = "name";
         public static final String GUARDIAN_ADDRESS = "address";
         public static final String GUARDIAN_CONTACT_NUMBER = "contact_number";
+        
+          //Doctoer details added
+        public static final String DOCTOER_NAME = "name";
+        public static final String DOCTOER_ADDRESS = "address";
+        public static final String DOCTOER_CONTACT_NUMBER = "contact_number";
 
 
 
